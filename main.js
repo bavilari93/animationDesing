@@ -36,6 +36,14 @@ $(() => {
                             $(tag).removeClass('visible')
                         }
                     }
+        // fade out header content 
+        if(pageTop > 90){
+        	$('.tittle').fadeOut('slow');
+        	$('#parallax').css('background-image', "url()")
+        }else{
+        	$('.tittle').fadeIn('slow');
+        	$('#parallax').css('background-image', "url(background.png)")
+        }
     })
 
     // move on mouse over 
