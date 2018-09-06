@@ -25,14 +25,20 @@
         justify-content: center;
     }
 
-
+div #myTopNav.topNav{
+	    z-index: 99;
+}
     .top-nav {
-    	background-color: none;
+    	background-color: transparent;
+    	position: fixed;
+    	width: 100%s;
+    	height: 5rem;
         overflow: hidden;
         font-style: normal;
         font-variant: small-caps;
         font-weight: 100;
         line-height: 2rem;
+
     }
 
     .top-nav a {
@@ -48,6 +54,29 @@
 
     div.icon {
         display: none;
+    }
+
+    /*parallax*/
+
+    #parallax{
+    	background-image: url(background.png);
+    	background-size: cover;
+    	height: 40rem;
+    }
+
+    /*make each section visible when scroll*/
+    section{
+    	opacity: 0;
+    	transition: opacity 1s; 
+    }
+
+    section.visible{
+    	opacity: 1;
+    }
+
+    /*project*/
+    div .project{
+    	height: 20rem;
     }
 
 
