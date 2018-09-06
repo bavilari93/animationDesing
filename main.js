@@ -2,7 +2,6 @@ $(()=>{
 	const topNav = document.getElementById("myTopNav");
 	const container = document.querySelector('.modal-container');
 	$('.icon').click(()=>{
-		console.log(topNav.className);
 		if(topNav.className === 'top-nav'){
 			topNav.className += " responsive";
 			container.style.display = 'block';
